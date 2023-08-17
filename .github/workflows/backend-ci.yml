@@ -20,7 +20,7 @@ jobs:
     - name: Install dependencies
       run: python -m pip install black
     - name: Run lint
-      run: black backend/src
+      run: black backend/app
   
   static-check:
     runs-on: ubuntu-latest
@@ -35,4 +35,4 @@ jobs:
     - name: Install dependencies
       run: python -m pip install mypy
     - name: Run static check
-      run: mypy --install-types --non-interactive --ignore-missing-imports backend/src
+      run: mypy --install-types --non-interactive --ignore-missing-imports backend/app
