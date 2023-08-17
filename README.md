@@ -1,7 +1,7 @@
 # python-nextjs-template
 
 This is a minimal template for running a full stack webapp with
-docker-compose, Python FastAPI, NextJS, and PostgreSQL.
+docker-compose, Python FastAPI, NextJS, PostgreSQL and SQLAlchemy.
 
 This will set up a small webapp that retrieves and inserts `test` items
 stored in PostgreSQL through a Python API.
@@ -11,6 +11,7 @@ For more details on the tools used, see:
 * https://fastapi.tiangolo.com/
 * https://nextjs.org/
 * https://www.postgresql.org/
+* https://www.sqlalchemy.org/
 
 # Screenshots
 
