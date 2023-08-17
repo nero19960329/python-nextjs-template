@@ -6,7 +6,9 @@ COPY ./requirements.txt /backend/requirements.txt
 
 RUN pip install --no-cache-dir --upgrade -r /backend/requirements.txt
 
-COPY ./src /backend/app
+COPY ./app /backend/app
+
+ENV PYTHONPATH=/backend
 
 # Start the application using gunicorn with uvicorn worker
 # -w 4: number of workers

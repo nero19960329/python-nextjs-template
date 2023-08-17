@@ -6,3 +6,4 @@ __pycache__
 grass.db
 postgres_data
 .env
+.mypy_cache
