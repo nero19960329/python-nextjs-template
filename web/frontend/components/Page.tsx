@@ -48,11 +48,7 @@ export const Page = () => {
           name="field1"
           className="border border-gray-300 rounded px-2 py-1 mb-2"
         />
-        <button
-          type="button"
-          onClick={onSubmit}
-          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-        >
+        <button type="button" onClick={onSubmit} className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
           Add a new test
         </button>
       </form>
