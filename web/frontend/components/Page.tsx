@@ -27,22 +27,32 @@ export const Page = () => {
 
   return (
     <>
-      <p>Tests:</p>
-      <ul>{query.data?.map((test: Test) => <li key={test["field_1"]}>{test["field_1"]}</li>)}</ul>
+      <p className="text-xl font-bold mb-4">Tests:</p>
+      <ul className="list-disc ml-6">
+        {query.data?.map((test: Test) => (
+          <li key={test["field_1"]} className="mb-2">
+            {test["field_1"]}
+          </li>
+        ))}
+      </ul>
 
-      <form>
-        <label htmlFor="field1">Test field 1:</label>
-        <br />
+      <form className="mt-4">
+        <label htmlFor="field1" className="block mb-2">
+          Test field 1:
+        </label>
         <input
           type="text"
           onChange={(e: any) => setFormVal(e.target.value)}
           value={formVal}
           id="field1"
           name="field1"
+          className="border border-gray-300 rounded px-2 py-1 mb-2"
         />
-        <br />
-        <br />
-        <button type="button" onClick={onSubmit}>
+        <button
+          type="button"
+          onClick={onSubmit}
+          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+        >
           Add a new test
         </button>
       </form>
